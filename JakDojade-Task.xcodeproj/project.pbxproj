@@ -7,22 +7,97 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B7B339E2BD1336B007A3079 /* JakDojade_TaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B339D2BD1336B007A3079 /* JakDojade_TaskApp.swift */; };
-		3B7B33A02BD1336B007A3079 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B339F2BD1336B007A3079 /* ContentView.swift */; };
+		3B7B33A02BD1336B007A3079 /* BikeStationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B339F2BD1336B007A3079 /* BikeStationsView.swift */; };
 		3B7B33A22BD13371007A3079 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B7B33A12BD13371007A3079 /* Assets.xcassets */; };
 		3B7B33A52BD13371007A3079 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B7B33A42BD13371007A3079 /* Preview Assets.xcassets */; };
+		3B7B33AC2BD1344C007A3079 /* BikeStationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B33AB2BD1344C007A3079 /* BikeStationsViewModel.swift */; };
+		3B7B33AF2BD16A47007A3079 /* DistanceCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B33AE2BD16A47007A3079 /* DistanceCalculator.swift */; };
+		3B7B33B12BD16A75007A3079 /* StationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B33B02BD16A75007A3079 /* StationAdapter.swift */; };
+		3B7B33B32BD16AAB007A3079 /* StatusFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B33B22BD16AAB007A3079 /* StatusFetcher.swift */; };
+		3B7B33B52BD16AD7007A3079 /* StationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B33B42BD16AD7007A3079 /* StationFetcher.swift */; };
+		3B7B33BB2BD1A28F007A3079 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B33BA2BD1A28F007A3079 /* LocationManager.swift */; };
+		3B7B33BE2BD1A3B0007A3079 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B33BD2BD1A3B0007A3079 /* Coordinator.swift */; };
+		3B7B33C02BD1A3E6007A3079 /* ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B33BF2BD1A3E6007A3079 /* ViewFactory.swift */; };
+		3B7B33C22BD1A401007A3079 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B33C12BD1A401007A3079 /* Dependencies.swift */; };
+		3B7B33C42BD1A68E007A3079 /* StationDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B33C32BD1A68E007A3079 /* StationDetailsView.swift */; };
+		3B7B33C62BD1AAB5007A3079 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B33C52BD1AAB5007A3079 /* AppDelegate.swift */; };
+		3B7B33C82BD242DB007A3079 /* StationDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B33C72BD242DA007A3079 /* StationDetailsViewModel.swift */; };
+		3B7B33D82BD2468D007A3079 /* Services.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7B33D22BD2468D007A3079 /* Services.framework */; };
+		3B7B33D92BD2468D007A3079 /* Services.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7B33D22BD2468D007A3079 /* Services.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3B7B33DF2BD2469F007A3079 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B33DE2BD2469F007A3079 /* Models.swift */; };
+		3B7B33E12BD246F7007A3079 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B33E02BD246F7007A3079 /* ServiceManager.swift */; };
+		3B7B33E32BD2470D007A3079 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B33E22BD2470D007A3079 /* APIError.swift */; };
+		3B7B33E62BD24915007A3079 /* BikeStationCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B33E42BD248EC007A3079 /* BikeStationCellView.swift */; };
+		3B7B33EC2BD24B04007A3079 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B33EB2BD24B04007A3079 /* Fonts.swift */; };
+		3B7B33ED2BD24D8E007A3079 /* Monrope.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B7B33E92BD24A90007A3079 /* Monrope.ttf */; };
+		3B7B33EF2BD24E36007A3079 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B33EE2BD24E36007A3079 /* Color.swift */; };
+		3B7B33F12BD25454007A3079 /* BikeStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B33F02BD25454007A3079 /* BikeStation.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B7B33D62BD2468D007A3079 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B7B33922BD1336B007A3079 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B7B33D12BD2468D007A3079;
+			remoteInfo = Services;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3B7B33DD2BD2468D007A3079 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3B7B33D92BD2468D007A3079 /* Services.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3B7B339A2BD1336B007A3079 /* JakDojade-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JakDojade-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B7B339D2BD1336B007A3079 /* JakDojade_TaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JakDojade_TaskApp.swift; sourceTree = "<group>"; };
-		3B7B339F2BD1336B007A3079 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3B7B339F2BD1336B007A3079 /* BikeStationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationsView.swift; sourceTree = "<group>"; };
 		3B7B33A12BD13371007A3079 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B7B33A42BD13371007A3079 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3B7B33AB2BD1344C007A3079 /* BikeStationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationsViewModel.swift; sourceTree = "<group>"; };
+		3B7B33AD2BD16873007A3079 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3B7B33AE2BD16A47007A3079 /* DistanceCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceCalculator.swift; sourceTree = "<group>"; };
+		3B7B33B02BD16A75007A3079 /* StationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationAdapter.swift; sourceTree = "<group>"; };
+		3B7B33B22BD16AAB007A3079 /* StatusFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusFetcher.swift; sourceTree = "<group>"; };
+		3B7B33B42BD16AD7007A3079 /* StationFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationFetcher.swift; sourceTree = "<group>"; };
+		3B7B33BA2BD1A28F007A3079 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		3B7B33BC2BD1A2F9007A3079 /* Gdansk.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Gdansk.gpx; sourceTree = "<group>"; };
+		3B7B33BD2BD1A3B0007A3079 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		3B7B33BF2BD1A3E6007A3079 /* ViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFactory.swift; sourceTree = "<group>"; };
+		3B7B33C12BD1A401007A3079 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		3B7B33C32BD1A68E007A3079 /* StationDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDetailsView.swift; sourceTree = "<group>"; };
+		3B7B33C52BD1AAB5007A3079 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3B7B33C72BD242DA007A3079 /* StationDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDetailsViewModel.swift; sourceTree = "<group>"; };
+		3B7B33D22BD2468D007A3079 /* Services.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Services.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B7B33DE2BD2469F007A3079 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		3B7B33E02BD246F7007A3079 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		3B7B33E22BD2470D007A3079 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		3B7B33E42BD248EC007A3079 /* BikeStationCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationCellView.swift; sourceTree = "<group>"; };
+		3B7B33E92BD24A90007A3079 /* Monrope.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Monrope.ttf; sourceTree = "<group>"; };
+		3B7B33EB2BD24B04007A3079 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		3B7B33EE2BD24E36007A3079 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		3B7B33F02BD25454007A3079 /* BikeStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3B7B33972BD1336B007A3079 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B7B33D82BD2468D007A3079 /* Services.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B7B33CF2BD2468D007A3079 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				3B7B339C2BD1336B007A3079 /* JakDojade-Task */,
+				3B7B33D32BD2468D007A3079 /* Services */,
 				3B7B339B2BD1336B007A3079 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				3B7B339A2BD1336B007A3079 /* JakDojade-Task.app */,
+				3B7B33D22BD2468D007A3079 /* Services.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,10 +128,24 @@
 		3B7B339C2BD1336B007A3079 /* JakDojade-Task */ = {
 			isa = PBXGroup;
 			children = (
-				3B7B339D2BD1336B007A3079 /* JakDojade_TaskApp.swift */,
-				3B7B339F2BD1336B007A3079 /* ContentView.swift */,
+				3B7B33AD2BD16873007A3079 /* Info.plist */,
+				3B7B33C52BD1AAB5007A3079 /* AppDelegate.swift */,
+				3B7B33BD2BD1A3B0007A3079 /* Coordinator.swift */,
+				3B7B33C12BD1A401007A3079 /* Dependencies.swift */,
+				3B7B33BF2BD1A3E6007A3079 /* ViewFactory.swift */,
+				3B7B33C92BD244C0007A3079 /* StationDetails */,
+				3B7B33CA2BD244FF007A3079 /* BikeStations */,
+				3B7B33B42BD16AD7007A3079 /* StationFetcher.swift */,
+				3B7B33B22BD16AAB007A3079 /* StatusFetcher.swift */,
+				3B7B33B02BD16A75007A3079 /* StationAdapter.swift */,
+				3B7B33BA2BD1A28F007A3079 /* LocationManager.swift */,
+				3B7B33AE2BD16A47007A3079 /* DistanceCalculator.swift */,
+				3B7B33F22BD2546D007A3079 /* Models */,
+				3B7B33EA2BD24AF1007A3079 /* Constants */,
+				3B7B33E82BD24A90007A3079 /* Fonts */,
 				3B7B33A12BD13371007A3079 /* Assets.xcassets */,
 				3B7B33A32BD13371007A3079 /* Preview Content */,
+				3B7B33BC2BD1A2F9007A3079 /* Gdansk.gpx */,
 			);
 			path = "JakDojade-Task";
 			sourceTree = "<group>";
@@ -67,7 +158,71 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		3B7B33C92BD244C0007A3079 /* StationDetails */ = {
+			isa = PBXGroup;
+			children = (
+				3B7B33C32BD1A68E007A3079 /* StationDetailsView.swift */,
+				3B7B33C72BD242DA007A3079 /* StationDetailsViewModel.swift */,
+			);
+			path = StationDetails;
+			sourceTree = "<group>";
+		};
+		3B7B33CA2BD244FF007A3079 /* BikeStations */ = {
+			isa = PBXGroup;
+			children = (
+				3B7B33E42BD248EC007A3079 /* BikeStationCellView.swift */,
+				3B7B339F2BD1336B007A3079 /* BikeStationsView.swift */,
+				3B7B33AB2BD1344C007A3079 /* BikeStationsViewModel.swift */,
+			);
+			path = BikeStations;
+			sourceTree = "<group>";
+		};
+		3B7B33D32BD2468D007A3079 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3B7B33DE2BD2469F007A3079 /* Models.swift */,
+				3B7B33E02BD246F7007A3079 /* ServiceManager.swift */,
+				3B7B33E22BD2470D007A3079 /* APIError.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3B7B33E82BD24A90007A3079 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3B7B33E92BD24A90007A3079 /* Monrope.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		3B7B33EA2BD24AF1007A3079 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				3B7B33EB2BD24B04007A3079 /* Fonts.swift */,
+				3B7B33EE2BD24E36007A3079 /* Color.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		3B7B33F22BD2546D007A3079 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3B7B33F02BD25454007A3079 /* BikeStation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3B7B33CD2BD2468D007A3079 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		3B7B33992BD1336B007A3079 /* JakDojade-Task */ = {
@@ -77,15 +232,35 @@
 				3B7B33962BD1336B007A3079 /* Sources */,
 				3B7B33972BD1336B007A3079 /* Frameworks */,
 				3B7B33982BD1336B007A3079 /* Resources */,
+				3B7B33DD2BD2468D007A3079 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3B7B33D72BD2468D007A3079 /* PBXTargetDependency */,
 			);
 			name = "JakDojade-Task";
 			productName = "JakDojade-Task";
 			productReference = 3B7B339A2BD1336B007A3079 /* JakDojade-Task.app */;
 			productType = "com.apple.product-type.application";
+		};
+		3B7B33D12BD2468D007A3079 /* Services */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B7B33DA2BD2468D007A3079 /* Build configuration list for PBXNativeTarget "Services" */;
+			buildPhases = (
+				3B7B33CD2BD2468D007A3079 /* Headers */,
+				3B7B33CE2BD2468D007A3079 /* Sources */,
+				3B7B33CF2BD2468D007A3079 /* Frameworks */,
+				3B7B33D02BD2468D007A3079 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Services;
+			productName = Services;
+			productReference = 3B7B33D22BD2468D007A3079 /* Services.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -99,6 +274,10 @@
 				TargetAttributes = {
 					3B7B33992BD1336B007A3079 = {
 						CreatedOnToolsVersion = 15.0;
+					};
+					3B7B33D12BD2468D007A3079 = {
+						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
 					};
 				};
 			};
@@ -116,6 +295,7 @@
 			projectRoot = "";
 			targets = (
 				3B7B33992BD1336B007A3079 /* JakDojade-Task */,
+				3B7B33D12BD2468D007A3079 /* Services */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +307,14 @@
 			files = (
 				3B7B33A52BD13371007A3079 /* Preview Assets.xcassets in Resources */,
 				3B7B33A22BD13371007A3079 /* Assets.xcassets in Resources */,
+				3B7B33ED2BD24D8E007A3079 /* Monrope.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B7B33D02BD2468D007A3079 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,12 +325,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B7B33A02BD1336B007A3079 /* ContentView.swift in Sources */,
-				3B7B339E2BD1336B007A3079 /* JakDojade_TaskApp.swift in Sources */,
+				3B7B33C42BD1A68E007A3079 /* StationDetailsView.swift in Sources */,
+				3B7B33F12BD25454007A3079 /* BikeStation.swift in Sources */,
+				3B7B33EC2BD24B04007A3079 /* Fonts.swift in Sources */,
+				3B7B33C22BD1A401007A3079 /* Dependencies.swift in Sources */,
+				3B7B33AF2BD16A47007A3079 /* DistanceCalculator.swift in Sources */,
+				3B7B33A02BD1336B007A3079 /* BikeStationsView.swift in Sources */,
+				3B7B33EF2BD24E36007A3079 /* Color.swift in Sources */,
+				3B7B33E62BD24915007A3079 /* BikeStationCellView.swift in Sources */,
+				3B7B33C62BD1AAB5007A3079 /* AppDelegate.swift in Sources */,
+				3B7B33BE2BD1A3B0007A3079 /* Coordinator.swift in Sources */,
+				3B7B33B12BD16A75007A3079 /* StationAdapter.swift in Sources */,
+				3B7B33AC2BD1344C007A3079 /* BikeStationsViewModel.swift in Sources */,
+				3B7B33B52BD16AD7007A3079 /* StationFetcher.swift in Sources */,
+				3B7B33C02BD1A3E6007A3079 /* ViewFactory.swift in Sources */,
+				3B7B33B32BD16AAB007A3079 /* StatusFetcher.swift in Sources */,
+				3B7B33C82BD242DB007A3079 /* StationDetailsViewModel.swift in Sources */,
+				3B7B33BB2BD1A28F007A3079 /* LocationManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B7B33CE2BD2468D007A3079 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B7B33DF2BD2469F007A3079 /* Models.swift in Sources */,
+				3B7B33E12BD246F7007A3079 /* ServiceManager.swift in Sources */,
+				3B7B33E32BD2470D007A3079 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B7B33D72BD2468D007A3079 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B7B33D12BD2468D007A3079 /* Services */;
+			targetProxy = 3B7B33D62BD2468D007A3079 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		3B7B33A62BD13371007A3079 /* Debug */ = {
@@ -267,14 +488,16 @@
 		3B7B33A92BD13371007A3079 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"JakDojade-Task/Preview Content\"";
+				DEVELOPMENT_TEAM = 93284K68YD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "JakDojade-Task/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -295,14 +518,16 @@
 		3B7B33AA2BD13371007A3079 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"JakDojade-Task/Preview Content\"";
+				DEVELOPMENT_TEAM = 93284K68YD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "JakDojade-Task/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -317,6 +542,75 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3B7B33DB2BD2468D007A3079 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 93284K68YD;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Kubson98.Services;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3B7B33DC2BD2468D007A3079 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 93284K68YD;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Kubson98.Services;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -337,6 +631,15 @@
 			buildConfigurations = (
 				3B7B33A92BD13371007A3079 /* Debug */,
 				3B7B33AA2BD13371007A3079 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B7B33DA2BD2468D007A3079 /* Build configuration list for PBXNativeTarget "Services" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B7B33DB2BD2468D007A3079 /* Debug */,
+				3B7B33DC2BD2468D007A3079 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
